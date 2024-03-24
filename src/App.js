@@ -75,7 +75,7 @@ function App() {
 
     //Sorting different frequency ranges into "buckets"
     for (let i = dip; i < revdip; i++) {
-      let f = (96000 / i);
+      let f = (48000 / i);
       for (let j = 0; j < Frequencyranges.length; j++) {
         if (f >= Frequencyranges[j].range.min && f <= Frequencyranges[j].range.max) {
           //adding product of offsetsum and frequency
@@ -186,7 +186,7 @@ function App() {
             video: false
           }).then(stream => {
             //creating an audio context
-            const context = new AudioContext({sampleRate:96000})
+            const context = new AudioContext()
 
             //creates a node whose value is obtained from getUserMedia
             const AudioCtX = context.createMediaStreamSource(stream);
@@ -205,7 +205,7 @@ function App() {
         }} >Click Me</button>
         <Line
           data={{
-            labels: amp.map((_, i) => 96000 / (amp.length - i - 1)),
+            labels: amp.map((_, i) => 48000 / (amp.length - i - 1)),
             datasets: [
               {
                 label: "Amplitude",

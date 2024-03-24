@@ -1,0 +1,497 @@
+[
+    {
+      "frequency": 32.70,
+      "range": {
+        "min": 31.37,
+        "max": 34.03
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 34.65,
+      "range": {
+        "min": 34.03,
+        "max": 35.28
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 36.71,
+      "range": {
+        "min": 35.28,
+        "max": 38.13
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 38.89,
+      "range": {
+        "min": 38.13,
+        "max": 39.65
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 41.20,
+      "range": {
+        "min": 39.65,
+        "max": 42.75
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 43.65,
+      "range": {
+        "min": 42.75,
+        "max": 44.55
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 46.25,
+      "range": {
+        "min": 44.55,
+        "max": 47.95
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 49.00,
+      "range": {
+        "min": 47.95,
+        "max": 50.05
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 51.91,
+      "range": {
+        "min": 50.05,
+        "max": 53.78
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 55.00,
+      "range": {
+        "min": 53.78,
+        "max": 56.23
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 58.27,
+      "range": {
+        "min": 56.23,
+        "max": 60.31
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 61.74,
+      "range": {
+        "min": 60.31,
+        "max": 63.17
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 65.41,
+      "range": {
+        "min": 63.17,
+        "max": 67.65
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 69.30,
+      "range": {
+        "min": 67.65,
+        "max": 70.95
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 73.42,
+      "range": {
+        "min": 70.95,
+        "max": 75.88
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 77.78,
+      "range": {
+        "min": 75.88,
+        "max": 85.23
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 87.31,
+      "range": {
+        "min": 85.23,
+        "max": 89.40
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 92.50,
+      "range": {
+        "min": 89.40,
+        "max": 95.60
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 98.00,
+      "range": {
+        "min": 95.60,
+        "max": 100.40
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 103.83,
+      "range": {
+        "min": 100.40,
+        "max": 107.28
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 110.00,
+      "range": {
+        "min": 107.28,
+        "max": 112.73
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 116.54,
+      "range": {
+        "min": 112.73,
+        "max": 120.31
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 123.47,
+      "range": {
+        "min": 120.31,
+        "max": 126.63
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 130.81,
+      "range": {
+        "min": 126.63,
+        "max": 135.00
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 138.59,
+      "range": {
+        "min": 135.00,
+        "max": 153.48
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 155.56,
+      "range": {
+        "min": 153.48,
+        "max": 179.23
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 185.00,
+      "range": {
+        "min": 179.23,
+        "max": 190.80
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 196.00,
+      "range": {
+        "min": 190.80,
+        "max": 201.20
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 207.65,
+      "range": {
+        "min": 201.20,
+        "max": 214.08
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 220.00,
+      "range": {
+        "min": 214.08,
+        "max": 225.93
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 233.08,
+      "range": {
+        "min": 225.93,
+        "max": 240.31
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 246.94,
+      "range": {
+        "min": 240.31,
+        "max": 253.28
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 261.63,
+      "range": {
+        "min": 253.28,
+        "max": 270.00
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 277.18,
+      "range": {
+        "min": 270.00,
+        "max": 284.38
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 293.66,
+      "range": {
+        "min": 284.38,
+        "max": 302.98
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 311.13,
+      "range": {
+        "min": 302.98,
+        "max": 319.30
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 329.63,
+      "range": {
+        "min": 319.30,
+        "max": 340.00
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 349.23,
+      "range": {
+        "min": 340.00,
+        "max": 358.48
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 369.99,
+      "range": {
+        "min": 358.48,
+        "max": 381.60
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 392.00,
+      "range": {
+        "min": 381.60,
+        "max": 402.40
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 415.30,
+      "range": {
+        "min": 402.40,
+        "max": 428.18
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 440.00,
+      "range": {
+        "min": 428.18,
+        "max": 451.88
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 466.16,
+      "range": {
+        "min": 451.88,
+        "max": 480.63
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 493.88,
+      "range": {
+        "min": 480.63,
+        "max": 506.58
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    },
+    {
+      "frequency": 523.25,
+      "range": {
+        "min": 506.58,
+        "max": 540.00
+      },
+      "weightedAverage": 0,
+      "offsetSum": 0,
+      "offsets" : [],
+      "frequencies": []
+    }
+  ]

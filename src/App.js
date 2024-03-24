@@ -3,17 +3,20 @@ import './App.css';
 import { Chart as ChartJS } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import { useState } from 'react';
-
+import Frequencyranges from './Frequencyranges.json'
 const defaultTimes = [];
 for (let i = 1; i <= 2048; i++) {
   defaultTimes.push(i);
 }
+let prev = 1;
+
 function App() {
   const [time, setTime] = useState(defaultTimes);
   const [amp, setAmp] = useState([...defaultTimes]);
   const [freq, setFreq] = useState(null);
   //Gets the time domain data from the ansalyser node
   function getAudio(analyser, dataArray) {
+    var lowestFreq = [];
     //Data array stores the amplitude of sound for time instances
     analyser.getFloatTimeDomainData(dataArray);
     let sum = 0;
@@ -25,9 +28,9 @@ function App() {
       flag = 1;
     }
     if (flag == 0) {
-      setAmp(Array.from(dataArray));
+      //setAmp(Array.from(dataArray));
     } else {
-      setAmp(Array(dataArray.length).fill(0))
+      //setAmp(Array(dataArray.length).fill(0))
     }
 
     //finding more accurate range for the sample size
@@ -56,7 +59,7 @@ function App() {
         newArray[offset] = newArray[offset] + slicedDataArray[j] * slicedDataArray[j + offset]
       }
     }
-
+    setAmp([...newArray].reverse());
     // Find the last index where that value is greater than the next one (the dip)
     var dip = 0;
     while (newArray[dip] > newArray[dip + 1]) {
@@ -66,6 +69,62 @@ function App() {
     while (newArray[revdip] > newArray[revdip - 1]) {
       revdip--;
     }
+
+
+
+
+    //Sorting different frequency ranges into "buckets"
+    for (let i = dip; i < revdip; i++) {
+      let f = (96000 / i);
+      for (let j = 0; j < Frequencyranges.length; j++) {
+        if (f >= Frequencyranges[j].range.min && f <= Frequencyranges[j].range.max) {
+          //adding product of offsetsum and frequency
+          Frequencyranges[j].weightedAverage += (newArray[i] * f);
+          //finding sum of all the offsets
+          Frequencyranges[j].offsetSum += newArray[i];
+          //adding each offset to an array
+          Frequencyranges[j].offsets.push(newArray[i]);
+
+          Frequencyranges[j].frequencies.push(f);
+          break;
+        }
+      }
+    }
+
+    for (let i = 0; i < Frequencyranges.length; i++) {
+      if (Frequencyranges[i].offsetSum == 0) { continue };
+      Frequencyranges[i].weightedAverage /= Frequencyranges[i].offsetSum;
+    };
+    for (let i = 0; i < Frequencyranges.length; i++) {
+      //finding the median value and storing it in offsetsum variable
+      //sorting the offset array
+      let copy = [...Frequencyranges[i].offsets]
+      copy.sort();
+      Frequencyranges[i].offsetSum = copy[Math.ceil(copy.length / 2)]
+    };
+    //Sorting this frequencyranges array to get the two highest median offsetsum frequencies
+    Frequencyranges.sort((a, b) => {
+      return b.offsetSum - a.offsetSum;
+    });
+    if (flag == 0) {
+      let minRange = Frequencyranges[0].weightedAverage <= Frequencyranges[1].weightedAverage ? Frequencyranges[0] : Frequencyranges[1]
+      const minOffset = Math.max(...minRange.offsets);
+      setFreq(Math.round(minRange.frequencies[minRange.offsets.findIndex(s => s === minOffset)] * 100) / 100)
+    } else {
+      setFreq(0);
+    }
+    //console.log(Frequencyranges[0].offsets, Frequencyranges[1].offsets);
+    for (let i = 0; i < Frequencyranges.length; i++) {
+      Frequencyranges[i].weightedAverage = 0;
+      Frequencyranges[i].offsetSum = 0;
+      Frequencyranges[i].frequencies = [];
+      Frequencyranges[i].offsets = [];
+
+    };
+
+
+
+    /*
     // Calculate the offset with the highest value
     var maxValue = -1;
     var bestOffset = -1;
@@ -75,13 +134,44 @@ function App() {
         bestOffset = i;
       }
     }
-
-    console.log(revdip, bestOffset)
+    //Finding highest offset sums and storing them in an array
+    for (let i = dip; i < revdip; i++) {
+      if (newArray[i + 1] < newArray[i]) {
+        lowestFreq.push({
+          OffsetSum: newArray[i],
+          freq: (Math.round((48000 / i) * 10) / 10)
+        })
+      }
+    }
+    lowestFreq.sort((a, b) => {
+      return b.OffsetSum - a.OffsetSum;
+    });
     if (flag == 0) {
-      setFreq(Math.round((48000 / bestOffset) * 10) / 10);
+      if (lowestFreq[0].freq >= 160 && lowestFreq[0].freq <= 170) {
+        //console.log(lowestFreq.slice(0, 1000))
+      }
+      setFreq(lowestFreq[0].freq);
+    } else {
+      setFreq(0)
+    }
+    /*let temp = ((Math.round((48000 / bestOffset) * 10) / 10))
+    console.log((48000 / bestOffset))
+    
+    if (flag == 0) {
+      if (Math.abs((temp / 2 - prev)) < 5) {
+        prev = (temp)
+        setFreq(temp / 2);
+      } else if (Math.abs(temp / 3 - prev) < 5) {
+        prev = (temp)
+        setFreq(temp / 3);
+      } else {
+        setFreq(temp);
+        prev = (temp);
+      };
     } else {
       setFreq(0);
-    }
+    }*/
+
     requestAnimationFrame(() => { getAudio(analyser, dataArray) });
   }
   return (
@@ -96,9 +186,8 @@ function App() {
             video: false
           }).then(stream => {
             //creating an audio context
-            const context = new AudioContext()
+            const context = new AudioContext({sampleRate:96000})
 
-            console.log(stream)
             //creates a node whose value is obtained from getUserMedia
             const AudioCtX = context.createMediaStreamSource(stream);
 
@@ -116,7 +205,7 @@ function App() {
         }} >Click Me</button>
         <Line
           data={{
-            labels: time,
+            labels: amp.map((_, i) => 96000 / (amp.length - i - 1)),
             datasets: [
               {
                 label: "Amplitude",

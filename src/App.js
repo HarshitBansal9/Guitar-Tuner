@@ -3,17 +3,22 @@ import './App.css';
 import { Chart as ChartJS } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import { useState } from 'react';
-import Frequencyranges from './Frequencyranges.json'
+import Frequencyranges from './Frequencyranges.json';
+import GaugeComponent from 'react-gauge-component';
 const defaultTimes = [];
 for (let i = 1; i <= 2048; i++) {
   defaultTimes.push(i);
 }
-let prev = 1;
-
+let prev = 0;
+let count = 0;
+let silencecnt = 0;
 function App() {
   const [time, setTime] = useState(defaultTimes);
   const [amp, setAmp] = useState([...defaultTimes]);
   const [freq, setFreq] = useState(null);
+  const [note, setNote] = useState(null);
+  const [min, setMin] = useState(0);
+  const [max, setMax] = useState(100);
   //Gets the time domain data from the ansalyser node
   function getAudio(analyser, dataArray) {
     var lowestFreq = [];
@@ -96,22 +101,42 @@ function App() {
       Frequencyranges[i].weightedAverage /= Frequencyranges[i].offsetSum;
     };
     for (let i = 0; i < Frequencyranges.length; i++) {
-      //finding the median value and storing it in offsetsum variable
+      //finding the max value and storing it in offsetsum variable
       //sorting the offset array
       let copy = [...Frequencyranges[i].offsets]
       copy.sort();
-      Frequencyranges[i].offsetSum = copy[Math.ceil(copy.length / 2)]
+      Frequencyranges[i].offsetSum = copy[copy.length - 1]
     };
-    //Sorting this frequencyranges array to get the two highest median offsetsum frequencies
+    //Sorting this frequencyranges array to get the two highest offsetsum frequencies
     Frequencyranges.sort((a, b) => {
       return b.offsetSum - a.offsetSum;
     });
     if (flag == 0) {
-      let minRange = Frequencyranges[0].weightedAverage <= Frequencyranges[1].weightedAverage ? Frequencyranges[0] : Frequencyranges[1]
+      let minRange = Frequencyranges[0]
       const minOffset = Math.max(...minRange.offsets);
-      setFreq(Math.round(minRange.frequencies[minRange.offsets.findIndex(s => s === minOffset)] * 100) / 100)
+      const f = Math.round(minRange.frequencies[minRange.offsets.findIndex(s => s === minOffset)] * 100) / 100
+
+      if (Math.abs(f - prev) >= 20 && count >= 3) {
+        setFreq(prev);
+        count--
+      } else {
+        setMin(minRange.range.min);
+        setMax(minRange.range.max);
+        setFreq(f);
+        setNote(minRange.note);
+        prev = f;
+        if (count <= 10) {
+          count++;
+        };
+      }
     } else {
-      setFreq(0);
+      if (silencecnt >= 20) {
+        setFreq(0);
+        silencecnt = 0;
+      } else {
+        setFreq(prev);
+        silencecnt++;
+      }
     }
     //console.log(Frequencyranges[0].offsets, Frequencyranges[1].offsets);
     for (let i = 0; i < Frequencyranges.length; i++) {
@@ -178,7 +203,7 @@ function App() {
     <div className="App">
       <div className='content'>
         <h1>App Component</h1>
-        <h3>{freq}</h3>
+        <h3> Frequency: {freq}</h3>
         <button onClick={() => {
           //Gets user audio permission
           navigator.mediaDevices.getUserMedia({
@@ -217,6 +242,20 @@ function App() {
               }
             ]
           }} />
+        <div> You are tuning: {note}</div>
+        <GaugeComponent
+          type="semicircle"
+          arc={{
+            colorArray: ['#00FF15', '#FF2121'],
+            padding: 0.02,
+            colorArray: ["#ff0000", "#ff4800", "#ff6600", "#ffc800", "#e1ff00", "#88ff00", "#e1ff00", "#ffc800", "#ff6600", "#ff4800", "#ff0000"],
+            subArcs: [{ length: 0.03 }, { length: 0.04 }, { length: 0.05 }, { length: 0.08 }, { length: 0.15 }, { length: 0.30 }, { length: 0.15 }, { length: 0.08 }, { length: 0.05 }, { length: 0.04 }, { length: 0.03 }]
+          }}
+          minValue={min}
+          maxValue={max}
+          pointer={{ type: "blob", animationDelay: 100 }}
+          value={freq}
+        />
 
       </div>
     </div>

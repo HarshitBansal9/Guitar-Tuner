@@ -1,497 +1,590 @@
 [
-    {
-      "frequency": 32.70,
-      "range": {
-        "min": 31.37,
-        "max": 34.03
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+  {
+    "frequency": 32.70,
+    "range": {
+      "min": 31.37,
+      "max": 34.03
     },
-    {
-      "frequency": 34.65,
-      "range": {
-        "min": 34.03,
-        "max": 35.28
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C1"
+  },
+  {
+    "frequency": 34.65,
+    "range": {
+      "min": 34.03,
+      "max": 35.28
     },
-    {
-      "frequency": 36.71,
-      "range": {
-        "min": 35.28,
-        "max": 38.13
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C#1/Db1"
+  },
+  {
+    "frequency": 36.71,
+    "range": {
+      "min": 35.28,
+      "max": 38.13
     },
-    {
-      "frequency": 38.89,
-      "range": {
-        "min": 38.13,
-        "max": 39.65
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D1"
+  },
+  {
+    "frequency": 38.89,
+    "range": {
+      "min": 38.13,
+      "max": 39.65
     },
-    {
-      "frequency": 41.20,
-      "range": {
-        "min": 39.65,
-        "max": 42.75
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D#1/Eb1"
+  },
+  {
+    "frequency": 41.20,
+    "range": {
+      "min": 39.65,
+      "max": 42.75
     },
-    {
-      "frequency": 43.65,
-      "range": {
-        "min": 42.75,
-        "max": 44.55
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "E1"
+  },
+  {
+    "frequency": 43.65,
+    "range": {
+      "min": 42.75,
+      "max": 44.55
     },
-    {
-      "frequency": 46.25,
-      "range": {
-        "min": 44.55,
-        "max": 47.95
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F1"
+  },
+  {
+    "frequency": 46.25,
+    "range": {
+      "min": 44.55,
+      "max": 47.95
     },
-    {
-      "frequency": 49.00,
-      "range": {
-        "min": 47.95,
-        "max": 50.05
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F#1/Gb1"
+  },
+  {
+    "frequency": 49.00,
+    "range": {
+      "min": 47.95,
+      "max": 50.05
     },
-    {
-      "frequency": 51.91,
-      "range": {
-        "min": 50.05,
-        "max": 53.78
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G1"
+  },
+  {
+    "frequency": 51.91,
+    "range": {
+      "min": 50.05,
+      "max": 53.78
     },
-    {
-      "frequency": 55.00,
-      "range": {
-        "min": 53.78,
-        "max": 56.23
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G#1/Ab1"
+  },
+  {
+    "frequency": 55.00,
+    "range": {
+      "min": 53.78,
+      "max": 56.23
     },
-    {
-      "frequency": 58.27,
-      "range": {
-        "min": 56.23,
-        "max": 60.31
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A1"
+  },
+  {
+    "frequency": 58.27,
+    "range": {
+      "min": 56.23,
+      "max": 60.31
     },
-    {
-      "frequency": 61.74,
-      "range": {
-        "min": 60.31,
-        "max": 63.17
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A#1/Bb1"
+  },
+  {
+    "frequency": 61.74,
+    "range": {
+      "min": 60.31,
+      "max": 63.17
     },
-    {
-      "frequency": 65.41,
-      "range": {
-        "min": 63.17,
-        "max": 67.65
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "B1"
+  },
+  {
+    "frequency": 65.41,
+    "range": {
+      "min": 63.17,
+      "max": 67.65
     },
-    {
-      "frequency": 69.30,
-      "range": {
-        "min": 67.65,
-        "max": 70.95
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C2"
+  },
+  {
+    "frequency": 69.30,
+    "range": {
+      "min": 67.65,
+      "max": 70.95
     },
-    {
-      "frequency": 73.42,
-      "range": {
-        "min": 70.95,
-        "max": 75.88
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C#2/Db2"
+  },
+  {
+    "frequency": 73.42,
+    "range": {
+      "min": 70.95,
+      "max": 75.88
     },
-    {
-      "frequency": 77.78,
-      "range": {
-        "min": 75.88,
-        "max": 85.23
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D2"
+  },
+  {
+    "frequency": 77.78,
+    "range": {
+      "min": 75.88,
+      "max": 79.58
     },
-    {
-      "frequency": 87.31,
-      "range": {
-        "min": 85.23,
-        "max": 89.40
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D#2/Eb2"
+  },
+  {
+    "frequency": 82.41,
+    "range": {
+      "min": 79.58,
+      "max": 85.23
     },
-    {
-      "frequency": 92.50,
-      "range": {
-        "min": 89.40,
-        "max": 95.60
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "E2"
+  },
+  {
+    "frequency": 87.31,
+    "range": {
+      "min": 85.23,
+      "max": 89.40
     },
-    {
-      "frequency": 98.00,
-      "range": {
-        "min": 95.60,
-        "max": 100.40
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F2"
+  },
+  {
+    "frequency": 92.50,
+    "range": {
+      "min": 89.40,
+      "max": 95.60
     },
-    {
-      "frequency": 103.83,
-      "range": {
-        "min": 100.40,
-        "max": 107.28
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F#2/Gb2"
+  },
+  {
+    "frequency": 98.00,
+    "range": {
+      "min": 95.60,
+      "max": 100.40
     },
-    {
-      "frequency": 110.00,
-      "range": {
-        "min": 107.28,
-        "max": 112.73
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G2"
+  },
+  {
+    "frequency": 103.83,
+    "range": {
+      "min": 100.40,
+      "max": 107.28
     },
-    {
-      "frequency": 116.54,
-      "range": {
-        "min": 112.73,
-        "max": 120.31
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G#2/Ab2"
+  },
+  {
+    "frequency": 110.00,
+    "range": {
+      "min": 107.28,
+      "max": 112.73
     },
-    {
-      "frequency": 123.47,
-      "range": {
-        "min": 120.31,
-        "max": 126.63
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A2"
+  },
+  {
+    "frequency": 116.54,
+    "range": {
+      "min": 112.73,
+      "max": 120.31
     },
-    {
-      "frequency": 130.81,
-      "range": {
-        "min": 126.63,
-        "max": 135.00
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A#2/Bb2"
+  },
+  {
+    "frequency": 123.47,
+    "range": {
+      "min": 120.31,
+      "max": 126.63
     },
-    {
-      "frequency": 138.59,
-      "range": {
-        "min": 135.00,
-        "max": 153.48
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "B2"
+  },
+  {
+    "frequency": 130.81,
+    "range": {
+      "min": 126.63,
+      "max": 135.00
     },
-    {
-      "frequency": 155.56,
-      "range": {
-        "min": 153.48,
-        "max": 179.23
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C3"
+  },
+  {
+    "frequency": 138.59,
+    "range": {
+      "min": 135.00,
+      "max": 142.18
     },
-    {
-      "frequency": 185.00,
-      "range": {
-        "min": 179.23,
-        "max": 190.80
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C#3/Db3"
+  },
+  {
+    "frequency": 146.83,
+    "range": {
+      "min": 142.18,
+      "max": 151.48
     },
-    {
-      "frequency": 196.00,
-      "range": {
-        "min": 190.80,
-        "max": 201.20
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D3"
+  },
+  {
+    "frequency": 155.56,
+    "range": {
+      "min": 151.48,
+      "max": 159.65
     },
-    {
-      "frequency": 207.65,
-      "range": {
-        "min": 201.20,
-        "max": 214.08
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D#3/Eb3"
+  },
+  {
+    "frequency": 164.81,
+    "range": {
+      "min": 159.65,
+      "max": 170.00
     },
-    {
-      "frequency": 220.00,
-      "range": {
-        "min": 214.08,
-        "max": 225.93
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "E3"
+  },
+  {
+    "frequency": 174.61,
+    "range": {
+      "min": 170.00,
+      "max": 179.23
     },
-    {
-      "frequency": 233.08,
-      "range": {
-        "min": 225.93,
-        "max": 240.31
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F3"
+  },
+  {
+    "frequency": 185.00,
+    "range": {
+      "min": 179.23,
+      "max": 190.80
     },
-    {
-      "frequency": 246.94,
-      "range": {
-        "min": 240.31,
-        "max": 253.28
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F#3/Gb3"
+  },
+  {
+    "frequency": 196.00,
+    "range": {
+      "min": 190.80,
+      "max": 201.20
     },
-    {
-      "frequency": 261.63,
-      "range": {
-        "min": 253.28,
-        "max": 270.00
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G3"
+  },
+  {
+    "frequency": 207.65,
+    "range": {
+      "min": 201.20,
+      "max": 214.08
     },
-    {
-      "frequency": 277.18,
-      "range": {
-        "min": 270.00,
-        "max": 284.38
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G#3/Ab3"
+  },
+  {
+    "frequency": 220.00,
+    "range": {
+      "min": 214.08,
+      "max": 225.93
     },
-    {
-      "frequency": 293.66,
-      "range": {
-        "min": 284.38,
-        "max": 302.98
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A3"
+  },
+  {
+    "frequency": 233.08,
+    "range": {
+      "min": 225.93,
+      "max": 240.31
     },
-    {
-      "frequency": 311.13,
-      "range": {
-        "min": 302.98,
-        "max": 319.30
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A#3/Bb3"
+  },
+  {
+    "frequency": 246.94,
+    "range": {
+      "min": 240.31,
+      "max": 253.28
     },
-    {
-      "frequency": 329.63,
-      "range": {
-        "min": 319.30,
-        "max": 340.00
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "B3"
+  },
+  {
+    "frequency": 261.63,
+    "range": {
+      "min": 253.28,
+      "max": 270.00
     },
-    {
-      "frequency": 349.23,
-      "range": {
-        "min": 340.00,
-        "max": 358.48
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C4"
+  },
+  {
+    "frequency": 277.18,
+    "range": {
+      "min": 270.00,
+      "max": 284.38
     },
-    {
-      "frequency": 369.99,
-      "range": {
-        "min": 358.48,
-        "max": 381.60
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C#4/Db4"
+  },
+  {
+    "frequency": 293.66,
+    "range": {
+      "min": 284.38,
+      "max": 302.98
     },
-    {
-      "frequency": 392.00,
-      "range": {
-        "min": 381.60,
-        "max": 402.40
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D4"
+  },
+  {
+    "frequency": 311.13,
+    "range": {
+      "min": 302.98,
+      "max": 319.30
     },
-    {
-      "frequency": 415.30,
-      "range": {
-        "min": 402.40,
-        "max": 428.18
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "D#4/Eb4"
+  },
+  {
+    "frequency": 329.63,
+    "range": {
+      "min": 319.30,
+      "max": 340.00
     },
-    {
-      "frequency": 440.00,
-      "range": {
-        "min": 428.18,
-        "max": 451.88
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "E4"
+  },
+  {
+    "frequency": 349.23,
+    "range": {
+      "min": 340.00,
+      "max": 358.48
     },
-    {
-      "frequency": 466.16,
-      "range": {
-        "min": 451.88,
-        "max": 480.63
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F4"
+  },
+  {
+    "frequency": 369.99,
+    "range": {
+      "min": 358.48,
+      "max": 381.60
     },
-    {
-      "frequency": 493.88,
-      "range": {
-        "min": 480.63,
-        "max": 506.58
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "F#4/Gb4"
+  },
+  {
+    "frequency": 392.00,
+    "range": {
+      "min": 381.60,
+      "max": 402.40
     },
-    {
-      "frequency": 523.25,
-      "range": {
-        "min": 506.58,
-        "max": 540.00
-      },
-      "weightedAverage": 0,
-      "offsetSum": 0,
-      "offsets" : [],
-      "frequencies": []
-    }
-  ]
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G4"
+  },
+  {
+    "frequency": 415.30,
+    "range": {
+      "min": 402.40,
+      "max": 428.18
+    },
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "G#4/Ab4"
+  },
+  {
+    "frequency": 440.00,
+    "range": {
+      "min": 428.18,
+      "max": 451.88
+    },
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A4"
+  },
+  {
+    "frequency": 466.16,
+    "range": {
+      "min": 451.88,
+      "max": 480.63
+    },
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "A#4/Bb4"
+  },
+  {
+    "frequency": 493.88,
+    "range": {
+      "min": 480.63,
+      "max": 506.58
+    },
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "B4"
+  },
+  {
+    "frequency": 523.25,
+    "range": {
+      "min": 506.58,
+      "max": 540.00
+    },
+    "weightedAverage": 0,
+    "offsetSum": 0,
+    "offsets": [],
+    "frequencies": [],
+    "note": "C5"
+  }
+]
